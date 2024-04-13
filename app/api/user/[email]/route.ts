@@ -8,11 +8,11 @@ export async function GET(
 ) {
   try {
     // Fetching current user
-    const currentUser = await getCurrentUser();
+    // const currentUser = await getCurrentUser();
     // If no current user, return an error response
-    if (!currentUser) {
-      return NextResponse.error();
-    }
+    //if (!currentUser) {
+      //return NextResponse.error();
+    //}
 
     // Extracting email from request parameters
     const userEmail = params.email;
